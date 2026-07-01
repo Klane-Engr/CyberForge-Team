@@ -1042,3 +1042,55 @@ footer {
     font-size: .9rem;
 
 }
+
+/* Cursor */
+
+body {
+
+    cursor: none;
+
+}
+
+.cursor-dot {
+
+    position: fixed;
+
+    width: 8px;
+
+    height: 8px;
+
+    background: var(--primary);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    z-index: 99999;
+
+    transform: translate(-50%, -50%);
+
+    box-shadow: 0 0 15px var(--primary);
+
+}
+
+.cursor-outline {
+
+    position: fixed;
+
+    width: 34px;
+
+    height: 34px;
+
+    border: 2px solid var(--primary);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    z-index: 99998;
+
+    transform: translate(-50%, -50%);
+
+    transition: transform .2s ease;
+
+}
