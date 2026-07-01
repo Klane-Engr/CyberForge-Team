@@ -104,3 +104,49 @@ document.querySelectorAll("a[href^='#']").forEach(anchor => {
     });
 
 });
+
+// Counter Animation
+
+const counters = document.querySelectorAll(".counter");
+
+const observer = new IntersectionObserver(entries => {
+
+    entries.forEach(entry => {
+
+        if (!entry.isIntersecting) return;
+
+        const counter = entry.target;
+
+        const target = Number(counter.dataset.target);
+
+        let current = 0;
+
+        const increment = Math.max(1, Math.ceil(target / 60));
+
+        const update = () => {
+
+            current += increment;
+
+            if (current >= target) {
+
+                counter.textContent = target;
+
+                return;
+
+            }
+
+            counter.textContent = current;
+
+            requestAnimationFrame(update);
+
+        };
+
+        update();
+
+        observer.unobserve(counter);
+
+    });
+
+});
+
+counters.forEach(counter => observer.observe(counter));
