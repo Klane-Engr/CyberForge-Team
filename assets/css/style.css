@@ -436,6 +436,28 @@ header.scrolled .navbar {
 
 }
 
+/* Logo Image */
+
+.logo-image {
+
+    width: 58px;
+
+    height: 58px;
+
+    object-fit: contain;
+
+    transition: var(--transition-medium);
+
+    filter: drop-shadow(0 0 12px rgba(0,212,255,.35));
+
+}
+
+.logo:hover .logo-image {
+
+    transform: rotate(-8deg) scale(1.08);
+
+}
+
 /* Navigation */
 
 .nav-links {
