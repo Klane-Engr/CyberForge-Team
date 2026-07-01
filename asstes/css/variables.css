@@ -1,1 +1,148 @@
+:root {
 
+    /* Colors */
+
+    --primary: #00d4ff;
+    --primary-light: #55e7ff;
+    --primary-dark: #0097cc;
+
+    --secondary: #00ffc8;
+    --secondary-light: #67ffe0;
+    --secondary-dark: #00b894;
+
+    --accent: #6cf2ff;
+
+    --success: #2ed573;
+    --warning: #ffa502;
+    --danger: #ff4757;
+
+    /* Background */
+
+    --background: #05070a;
+    --background-secondary: #09111b;
+    --surface: #0d1523;
+    --surface-light: #142033;
+    --card: #111b2d;
+
+    /* Text */
+
+    --text-primary: #ffffff;
+    --text-secondary: #b6c2d2;
+    --text-muted: #6f8198;
+
+    /* Border */
+
+    --border: rgba(255, 255, 255, 0.08);
+    --border-hover: rgba(0, 212, 255, 0.4);
+
+    /* Glass */
+
+    --glass: rgba(255, 255, 255, 0.04);
+    --glass-border: rgba(255, 255, 255, 0.08);
+
+    /* Gradients */
+
+    --gradient-primary:
+        linear-gradient(
+            135deg,
+            #00d4ff,
+            #00ffc8
+        );
+
+    --gradient-secondary:
+        linear-gradient(
+            135deg,
+            #008cff,
+            #00d4ff,
+            #00ffc8
+        );
+
+    --gradient-background:
+        radial-gradient(circle at top,
+            rgba(0, 212, 255, 0.15),
+            transparent 60%);
+
+    /* Shadows */
+
+    --shadow-small:
+        0 5px 15px rgba(0, 0, 0, 0.25);
+
+    --shadow-medium:
+        0 15px 35px rgba(0, 0, 0, 0.35);
+
+    --shadow-large:
+        0 25px 60px rgba(0, 0, 0, 0.5);
+
+    --shadow-glow:
+        0 0 25px rgba(0, 212, 255, 0.35);
+
+    /* Border Radius */
+
+    --radius-small: 8px;
+    --radius-medium: 14px;
+    --radius-large: 20px;
+    --radius-round: 999px;
+
+    /* Typography */
+
+    --font-family:
+        "Inter",
+        "Segoe UI",
+        sans-serif;
+
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-md: 1rem;
+    --font-size-lg: 1.15rem;
+    --font-size-xl: 1.5rem;
+    --font-size-2xl: 2.5rem;
+    --font-size-3xl: 4rem;
+
+    --font-light: 300;
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+
+    /* Layout */
+
+    --container-width: 1400px;
+    --navbar-height: 80px;
+
+    /* Spacing */
+
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-xl: 4rem;
+    --space-2xl: 6rem;
+
+    /* Animation */
+
+    --transition-fast: 0.2s ease;
+    --transition-medium: 0.35s ease;
+    --transition-slow: 0.6s ease;
+
+}
+
+/* Light Theme */
+
+body.light-theme {
+
+    --background: #f4f8fb;
+    --background-secondary: #ffffff;
+
+    --surface: #ffffff;
+    --surface-light: #f5f8fc;
+    --card: #ffffff;
+
+    --text-primary: #08101c;
+    --text-secondary: #41536d;
+    --text-muted: #6b7a90;
+
+    --glass: rgba(255, 255, 255, 0.75);
+
+    --border: rgba(0, 0, 0, 0.08);
+
+}
