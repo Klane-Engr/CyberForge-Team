@@ -131,3 +131,43 @@
     }
 
 }
+
+/* Particle Float */
+
+@keyframes particleFloat {
+
+    0% {
+
+        transform:
+            translateY(0)
+            translateX(0);
+
+        opacity: 0;
+
+    }
+
+    15% {
+
+        opacity: 1;
+
+    }
+
+    50% {
+
+        transform:
+            translateY(-120px)
+            translateX(30px);
+
+    }
+
+    100% {
+
+        transform:
+            translateY(-260px)
+            translateX(-20px);
+
+        opacity: 0;
+
+    }
+
+}
