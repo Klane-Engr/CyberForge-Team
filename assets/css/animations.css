@@ -1,1 +1,133 @@
+/* Fade */
 
+@keyframes fadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(40px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+/* Gradient */
+
+@keyframes gradientMove {
+
+    0% {
+
+        transform: translate(0,0);
+
+    }
+
+    50% {
+
+        transform: translate(-40px,-30px);
+
+    }
+
+    100% {
+
+        transform: translate(0,0);
+
+    }
+
+}
+
+/* Floating Glow */
+
+@keyframes floatGlow {
+
+    0% {
+
+        transform: translateY(0);
+
+    }
+
+    50% {
+
+        transform: translateY(-40px);
+
+    }
+
+    100% {
+
+        transform: translateY(0);
+
+    }
+
+}
+
+/* Bounce */
+
+@keyframes bounce {
+
+    0%,100% {
+
+        transform: translate(-50%,0);
+
+    }
+
+    50% {
+
+        transform: translate(-50%,-12px);
+
+    }
+
+}
+
+/* Scroll Wheel */
+
+@keyframes scrollWheel {
+
+    0% {
+
+        opacity: 0;
+
+        top: 8px;
+
+    }
+
+    50% {
+
+        opacity: 1;
+
+    }
+
+    100% {
+
+        opacity: 0;
+
+        top: 24px;
+
+    }
+
+}
+
+/* Floating */
+
+@keyframes floating {
+
+    0%,100% {
+
+        transform: translateY(0);
+
+    }
+
+    50% {
+
+        transform: translateY(-15px);
+
+    }
+
+}
