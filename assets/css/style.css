@@ -940,3 +940,105 @@ header.scrolled .navbar {
     margin-top: 8px;
 
 }
+
+/* Footer */
+
+footer {
+
+    position: relative;
+
+    margin-top: 120px;
+
+    background: rgba(255,255,255,.03);
+
+    backdrop-filter: blur(18px);
+
+    border-top: 1px solid var(--border);
+
+}
+
+.footer-container {
+
+    max-width: var(--container-width);
+
+    margin: auto;
+
+    padding: 80px 8% 50px;
+
+    display: grid;
+
+    grid-template-columns: 1.5fr 2fr;
+
+    gap: 80px;
+
+}
+
+.footer-brand h2 {
+
+    font-size: 2rem;
+
+    margin-bottom: 20px;
+
+}
+
+.footer-brand p {
+
+    max-width: 380px;
+
+    color: var(--text-secondary);
+
+    line-height: 1.8;
+
+}
+
+.footer-links {
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 40px;
+
+}
+
+.footer-links h4 {
+
+    margin-bottom: 22px;
+
+    color: var(--text-primary);
+
+}
+
+.footer-links a {
+
+    display: block;
+
+    margin-bottom: 14px;
+
+    color: var(--text-secondary);
+
+    transition: var(--transition-fast);
+
+}
+
+.footer-links a:hover {
+
+    color: var(--primary);
+
+    transform: translateX(8px);
+
+}
+
+.footer-bottom {
+
+    text-align: center;
+
+    padding: 28px;
+
+    border-top: 1px solid var(--border);
+
+    color: var(--text-muted);
+
+    font-size: .9rem;
+
+}
